@@ -1,0 +1,25 @@
+h2{
+    text-align: center;
+}
+.hero{
+    background: url(assets/imgs/sushi-cover.jpg);
+    background-size: cover;
+    background-position: center bottom;
+}
+.herojumbo{
+    background: linear-gradient(180deg, rgba(47,117,176,1), rgba(252,176,69,.75));
+}
+#about-us{
+    background: linear-gradient(90deg, rgba(74,74,74,1), rgba(177,177,177,.5)), url(assets/imgs/table-texture.jpg);
+/*    background-attachment: fixed;*/
+    background-size: 100%;
+    color: white;
+    padding: 50px;
+    
+}
+.carousel {
+  width:50%;
+}
+.middle{
+    align-content: center;
+}
