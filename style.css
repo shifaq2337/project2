@@ -5,6 +5,7 @@ h1, h2, h3, h4, h5, h6{
 }
 p{
     font-family: 'Merriweather', serif;
+    font-size: 18px;
 }
 h2{
     text-align: center;
@@ -36,17 +37,23 @@ nav img{
 }
 #menu{
     padding: 20px;
-    background-color: bisque;
+/*    background-color: bisque;*/
+    background-color: #EFA980;
 }
 .btn{
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
 /*    background-color: aquamarine;*/
 }
-footer{
+#footer{
     text-align: center;
+    background-color: #F3EBE6;
+    padding: 1px;
 }
 li{
     font-size: 25px;
     font-family: 'Oswald', sans-serif;
+}
+#contact{
+    background-color: #CBE4F6;
 }
