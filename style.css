@@ -13,9 +13,13 @@ h2{
     background: url(assets/imgs/sushi-cover.jpg);
     background-size: cover;
     background-position: center;
+    margin-top: 70px;
 }
 .herojumbo{
     background: linear-gradient(180deg, rgba(47,117,176,1), rgba(252,176,69,.75));
+}
+nav img{
+    height: 45px;
 }
 #about-us{
     background: linear-gradient(90deg, rgba(74,74,74,1), rgba(177,177,177,.5)), url(assets/imgs/table-texture.jpg);
@@ -30,7 +34,7 @@ h2{
     width: 60%;
     margin: 0 auto;
 }
-.menu{
+#menu{
     padding: 20px;
     background-color: bisque;
 }
@@ -38,4 +42,11 @@ h2{
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
 /*    background-color: aquamarine;*/
+}
+footer{
+    text-align: center;
+}
+li{
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
 }
