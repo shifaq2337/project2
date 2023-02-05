@@ -11,13 +11,18 @@ h2{
     text-align: center;
 }
 .hero{
-    background: url(assets/imgs/sushi-cover.jpg);
+    background: url(assets/imgs/hero-cover.jpg);
     background-size: cover;
+/*    background-repeat: no-repeat;*/
     background-position: center;
     margin-top: 70px;
+/*    padding: 150px 15px;*/
+    width: 100vw;
+    height: 100vh;
 }
 .herojumbo{
     background: linear-gradient(180deg, rgba(47,117,176,1), rgba(252,176,69,.75));
+/*    align-content: center;*/
 }
 nav img{
     height: 45px;
@@ -28,7 +33,7 @@ nav img{
     background-size: 100% 125px;
     background-attachment: fixed;
     color: white;
-    padding: 50px;
+    padding: 100px;
     
 }
 .carousel {
@@ -41,8 +46,8 @@ nav img{
     background-color: #EFA980;
 }
 .btn{
-    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
+    margin: 5px;
 /*    background-color: aquamarine;*/
 }
 #footer{
@@ -56,4 +61,14 @@ li{
 }
 #contact{
     background-color: #CBE4F6;
+    padding:20px;
 }
+a:hover{
+    color: blue;
+}
+nav .navbar-nav li a{
+    color: black;
+}
+nav .navbar-nav li a:hover{
+  color: #F58300!important;
+  }

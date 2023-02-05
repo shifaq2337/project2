@@ -46,9 +46,9 @@
             <div class="row">
                 <div class="herojumbo col-md-6 offset-md-6 p-5">
                     <h1 class="display-4 text-uppercase">ISOHAMA Japanese restaurant</h1>
-                    <p class="lead">Since its opening in 1997, Isohama has provided quality Japanese food to New York City’s Upper East Side residents.</p>
-                    <button type="button" id="reser" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">Make A Reservation!</button>
-                    <button type="button" id="order" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Order Now</button>
+                    <p class="lead">Since its opening in 1997, Isohama has provided quality Japanese food to New York City’s Upper East Side residents.</p><br>
+                    <button type="button" id="reser" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Make A Reservation!</button>
+                    <button type="button" id="order" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Order Now</button>
                 </div>
             </div>
         </div>
@@ -184,7 +184,7 @@
 			console.log('clicked order');
 			$('#exampleModalLabel').html("Order Food Online");
 			$('#change').html(`
-				If you would like to order food from Isohama online, <a href="https://www.seamless.com/menu/isohama-1666-3rd-ave-new-york/306838" class="text-decoration-none">click here</a>.
+				If you would like to order food from Isohama online, <a target="_blank" rel="noopener" href="https://www.seamless.com/menu/isohama-1666-3rd-ave-new-york/306838" class="text-decoration-none">click here</a>.
 			`);
 		});
     </script>
