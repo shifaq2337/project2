@@ -47,12 +47,30 @@
                 <div class="herojumbo col-md-6 offset-md-6 p-5">
                     <h1 class="display-4 text-uppercase">ISOHAMA Japanese restaurant</h1>
                     <p class="lead">Since its opening in 1997, Isohama has provided quality Japanese food to New York City’s Upper East Side residents.</p>
-                    <a class="btn btn-success btn-lg" href="#" role="button">Make A Reservation!</a>
-                    <a class="btn btn-success btn-lg" href="#" role="button">Order Now</a>
+                    <button type="button" id="reser" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">Make A Reservation!</button>
+                    <button type="button" id="order" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Order Now</button>
                 </div>
             </div>
         </div>
     </div>
+    
+<!--modal-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p id="change">If you would like to make a reservation, please call us at <a href="tel:+12128280099" class="text-decoration-none">(212) 828-0099</a>.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
 <!--about us-->
     <section id="about-us">
         <div class="container-fluid">
@@ -152,8 +170,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-    <script>
     
+    <script>
+        $('#reser').click(function() {
+			console.log('clicked reser');
+			$('#exampleModalLabel').html("Make A Reservation");
+			$('#change').html(`
+				If you would like to make a reservation, please call us at <a href="tel:+12128280099" class="text-decoration-none">(212) 828-0099</a>.
+			`);
+		});
+
+		$('#order').click(function() {
+			console.log('clicked order');
+			$('#exampleModalLabel').html("Order Food Online");
+			$('#change').html(`
+				If you would like to order food from Isohama online, <a href="https://www.seamless.com/menu/isohama-1666-3rd-ave-new-york/306838" class="text-decoration-none">click here</a>.
+			`);
+		});
     </script>
 
 </body>
